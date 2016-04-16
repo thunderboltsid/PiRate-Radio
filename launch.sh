@@ -1,0 +1,1 @@
+shairport-sync -a "π-Rate Radio" -o stdout | sox -t raw -r 44100 -c 2 -e signed-integer -b 16 --endian little  - -t wav - loudness +6 | sudo ./PiFmRds/src/pi_fm_rds -freq 97.4 -pi Pi-Rate -ps Pi-Rate -rt Pi-Rate -audio -
